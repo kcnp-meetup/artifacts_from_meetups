@@ -1,0 +1,9 @@
+[all:vars]
+un=mcourtney
+pwd=asshole11
+
+[ios]
+cisco.northstarnetworking.net
+
+[junos]
+juniper.northstarnetworking.net

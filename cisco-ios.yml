@@ -1,0 +1,14 @@
+- name: CONFIGURE IOS DEVICE
+  hosts: ios
+  gather_facts: no
+  connection: local
+ 
+  tasks:
+
+    - name: Deploy AAA Commands
+      ios_config:
+        commands:
+          - aaa accounting update periodic 1
+        username: "{{ un }}" 
+        password: "{{ pwd }}"
+        host: "{{ inventory_hostname }}"
